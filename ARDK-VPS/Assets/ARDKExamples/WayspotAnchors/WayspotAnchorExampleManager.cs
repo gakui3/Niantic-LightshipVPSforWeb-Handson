@@ -40,8 +40,6 @@ namespace Niantic.ARDKExamples.WayspotAnchors
         [SerializeField]
         private Text _payloadResult;
 
-        [SerializeField]
-        string testPayload;
         WayspotAnchorPayload waPayload;
 
         public WayspotAnchorService WayspotAnchorService;
@@ -159,10 +157,6 @@ namespace Niantic.ARDKExamples.WayspotAnchors
             else
             {
                 _statusLog.text = "No anchors to load.";
-                waPayload = WayspotAnchorPayload.Deserialize(testPayload);
-
-                var anchors = WayspotAnchorService.RestoreWayspotAnchors(waPayload);
-                CreateWayspotAnchorGameObject(anchors[0], Vector3.zero, Quaternion.identity, false);
             }
         }
 
