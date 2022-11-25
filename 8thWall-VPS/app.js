@@ -2,7 +2,6 @@ import './index.css'
 import {initScenePipelineModule} from './threejs-scene-init'
 import {detectWayspotPipelineModule} from './detect-wayspot.js'
 import {detectMeshPipelineModule} from './detect-mesh.js'
-import {customThreejsPipelineModule} from './customThreejsPipelineModule.js'
 import * as camerafeedHtml from './camerafeed.html'
 
 const onxrloaded = () => {
